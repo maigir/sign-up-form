@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign Up Form || The Odin Project</title>
   <link rel="stylesheet" href="./styles.css">
+  <script defer src="./script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -22,43 +26,47 @@
   </div>
 
   <div class="right__section">
-    <p>This is not a real online service! You know you need something like this in your life to help you realize
-      your deepest dreams.
-      Sign up <i>now</i> to get started.
-    </p>
-    <p>You <i>know</i> you want to.</p>
-    <div class="form">
+    <div class="upper__section">
+      <p class="upper__text">This is not a real online service! You know you need something like this in your life to
+        help you realize your
+        deepest dreams.
+        Sign up <i>now</i> to get started.
+      </p>
+      <p>You <i>know</i> you want to.</p>
+    </div>
+    <div class="middle__section">
       <p>Let's do this!</p>
-      <div class="form__fields">
-        <div class="form__fields--left">
-          <label for="firstName">first name
-            <input type="text" id="firstName">
-          </label>
-          <label for="email">email
-            <input type="email" id="email">
-          </label>
-          <label for="password">password
-            <input type="password" id="password">
-          </label>
+      <form class="form_layout" action="#" autocomplete="off">
+        <div class="left-form">
+          <label for="fName">first name</label>
+          <input class="fill" type="text" id="fName" tabindex="1">
+          <label for="email">email</label>
+          <input class="fill" type="email" id="email" tabindex="3">
+          <label for="password">password</label>
+          <input class="fill password" type="password" id="password" tabindex="5">
+          <div>
+            <i class="fa-regular fa-eye showPassword" title="show password"></i>
+          </div>
+
         </div>
-        <div class="form__fields--right">
-          <label for="lastName">
-            <input type="text" id="lastName">
-          </label>
-          <label for="phoneNr">phone number
-            <input type="number" id="phoneNr">
-          </label>
-          <label for="confirmPw">confirm password
-            <input type="password" id="confirmPw">
-          </label>
+        <div class="right-form">
+          <label for="lName">last name</label>
+          <input class="fill" type="text" id="lName" tabindex="2">
+          <label for="telNum">phone number</label>
+          <input class="fill" type="number" id="telNum" tabindex="4">
+          <label for="confPassword">confirm password</label>
+          <input class="fill" type="password" id="confPassword" tabindex="6">
+          <div>
+            <i class="fa-regular fa-eye showPassword" title="show password"></i>
+          </div>
         </div>
-        <button class="createAccount">Create Account</button>
-        <p>Already have an account? <a href="#" class="logIn">Log in</a></p>
-      </div>
+      </form>
+    </div>
+    <div class="bottom__section">
+      <button class="createAccount" tabindex="7">Create account</button>
+      <p>Already have an account? <a href="#" tabindex="8">Log in</a></p>
     </div>
   </div>
-
-  <script src="./script.js"></script>
 </body>
 
 </html>
