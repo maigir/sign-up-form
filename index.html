@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign Up Form || The Odin Project</title>
   <link rel="stylesheet" href="./styles.css">
-  <script defer src="./script.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,15 +13,16 @@
 
 <body>
   <div class="left__section">
-    <img class="left__section--img" src="./img/teeth.jpg" alt="A hand holding teeth impression, white background">
+    <img class="left__section--img" src="./img/green.jpg" alt="Green leaves">
     <div class="left__section--logo-background">
       <div class="left__section--logo">
         <img class="logo" src="./img/odin-logo.png" alt="Odin logo">
-        <p class="logo-header">Implantory</p>
+        <p class="logo-header">GREENERY</p>
       </div>
     </div>
-    <footer class="left__section--img-creator">Photo by <a href="https://unsplash.com/@amr_taha">Amr Taha</a> on <a
-        href="https://unsplash.com">Unsplash</a></footer>
+    <footer class="left__section--img-creator">Photo by <a href="https://unsplash.com/@ghog">Lawrence Kayku</a> on
+      <a href="https://unsplash.com">Unsplash</a>
+    </footer>
   </div>
 
   <div class="right__section">
@@ -39,31 +39,26 @@
       <form class="form_layout" action="#" autocomplete="off">
         <div class="left-form">
           <label for="fName">first name</label>
-          <input class="fill" type="text" id="fName" tabindex="1">
+          <input type="text" id="fName" tabindex="1">
           <label for="email">email</label>
-          <input class="fill" type="email" id="email" tabindex="3">
+          <input type="email" id="email" tabindex="3" required>
           <label for="password">password</label>
-          <input class="fill password" type="password" id="password" tabindex="5">
-          <div>
-            <i class="fa-regular fa-eye showPassword" title="show password"></i>
-          </div>
+          <input type="password" id="password" tabindex="5" title="Enter password consisting 5-9 digits"
+            pattern="[0-9a-zA-Z]{5,9}" autocomplete="new-password">
 
         </div>
         <div class="right-form">
           <label for="lName">last name</label>
-          <input class="fill" type="text" id="lName" tabindex="2">
+          <input type="text" id="lName" tabindex="2">
           <label for="telNum">phone number</label>
-          <input class="fill" type="number" id="telNum" tabindex="4">
+          <input type="number" id="telNum" tabindex="4" placeholder="+372">
           <label for="confPassword">confirm password</label>
-          <input class="fill" type="password" id="confPassword" tabindex="6">
-          <div>
-            <i class="fa-regular fa-eye showPassword" title="show password"></i>
-          </div>
+          <input type="password" id="confPassword" tabindex="6" autocomplete="new-password">
         </div>
       </form>
     </div>
     <div class="bottom__section">
-      <button class="createAccount" tabindex="7">Create account</button>
+      <button class="createAccount" type="submit" tabindex="7">Create account</button>
       <p>Already have an account? <a href="#" tabindex="8">Log in</a></p>
     </div>
   </div>
