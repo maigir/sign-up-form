@@ -19,7 +19,7 @@ body {
 /* Left section */
 
 .left__section {
-  width: 60%;
+  width: 100%;
   height: 100vh;
   position: relative;
 }
